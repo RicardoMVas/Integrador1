@@ -1,0 +1,773 @@
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300..700&display=swap');
+
+:root {
+    --color-amarillofondos:#ffd333 ;
+    --color-grisletras: #3d464d; 
+    --color-blancofondo: #f5f5f5;
+    --color-body: #ECECEC;
+}
+
+
+* {
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+/*Body*/
+body { 
+    font-family: "Pontano Sans" , sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+
+/*Cabezal superior*/
+
+.primerCabezal { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+background-color: #dadada;
+height: 40px;
+width: 100%;
+}
+
+.primerCabezal ul {
+display: flex;
+gap: 1rem;
+list-style: none;
+margin-left: .8rem;
+color: #3d464d;
+}
+
+.primerCabezal ul a { 
+    text-decoration: none;
+    color: #3d464d;
+}
+
+
+.user label {
+    background-color: #ffd333;
+    margin-right: 1rem;
+    padding: .3rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.user input {
+    display: none;
+}
+
+#ulUser { 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 50px;
+    background-color: #ffd333;
+    width: 150px;
+    height: 150px;
+    right: 0;
+    margin-right: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: none;
+   }
+
+   #usuario:checked ~ #ulUser {
+    display: flex;
+   }
+
+
+
+/*header del logo*/
+.logo {
+    display: flex;
+    background-color: #ECECEC;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo picture { 
+    margin-left: 1.5rem;
+}
+
+.logo input {
+    width: 500px;
+    height: 40px;
+    color: #3d464d;
+}
+
+input::placeholder {
+    text-align: center;
+    font-family: "Pontano Sans" , sans-serif;
+}
+
+.logo section { 
+    margin-right: 1.5rem;
+    text-align: end;
+}
+
+.logo section h3 {
+    color: #3d464d;
+    font-weight: 100;
+}
+
+.logo section h5 { 
+    font-size: 1.3rem;
+    color: #3d464d;
+    font-weight: 800;
+}
+
+
+.secciones {
+    display: flex;
+    width: 100%;
+    height: 65px;
+    background-color: #3d464d;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secciones ul {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 1.5rem;
+    list-style-type: none;
+}
+
+.secciones section { 
+    display: flex;
+    margin-right: 1.5rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.secciones section p {
+    color: #dadada;
+border: solid 2px #dadada;
+padding: .3rem;
+border-radius: 360px;
+}
+
+.secciones a {
+    text-decoration: none;
+    color:#dadada ;
+}
+
+
+
+/*Main de información*/
+.info {
+    display: flex;
+    width: 100%;
+    height: 460px;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.compraSegura {
+   display: flex;
+   flex-direction: column;
+    background-image: url(imagenes/3d.jpg);
+    width: 862px;
+    height: 430px;
+    background-size: cover;
+    margin-left: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.compraSegura h1 {
+    color: #dadada;
+    font-size: 2rem;
+}
+
+
+.compraSegura p {
+    color: #dadada;
+    font-weight: bold;
+}
+
+
+.compraSegura button {
+    background-color: transparent;
+    border: solid 1px #dadada;
+    color: #dadada;
+    padding: .5rem;
+    border-radius: 0.2rem;
+}
+
+
+.descuento {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    background-image: url(imagenes/ofer.jpg);
+    width: 700px;
+    height: 430px;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    gap: 1rem;
+}
+
+
+.descuento h1 {
+    color: #dadada;
+    font-size: 2rem;
+}
+
+
+.descuento p {
+    color: #dadada;
+    font-weight: bold;
+}
+
+
+.descuento button {
+    background-color: #ffd333;
+    border: none;
+    color: #3d464d;
+    padding: .5rem;
+    border-radius: 0.2rem;
+}
+
+
+/*datos - informacion general */
+
+.datos {
+ display: flex;
+ margin-top: 2rem;
+ width: 100%;
+ height: 100px;
+ align-items: center;
+ justify-content: space-around;
+
+
+
+}
+
+.datos li {
+    display: flex;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.datos li p {
+    font-weight: 600;
+    color: #3d464d;
+    font-size: 1.2rem;
+}
+
+/*Sección de categorias*/
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 100%;
+    height: 200px;
+    
+    
+}
+
+
+.categorias h1 {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #3d464d;
+} 
+
+.categorias h1::after {
+    content: "";
+    display: inline-block;
+    width: 85%; 
+    margin-left: 10px; 
+    vertical-align: middle;
+   border: 1px dotted #3d464d;
+   
+
+}
+
+.categorias ul {
+    margin-top: 1.8rem;
+   display: flex;
+   width: 100%;
+   list-style-type: none;
+   justify-content: space-evenly;
+    
+}
+
+.categorias ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 300px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.categorias ul li picture { 
+    display: flex;
+    align-items: center;
+}
+
+
+.categorias ul li h3 { 
+   font-size: 1rem;
+   margin-left: 1rem;
+   color: #3d464d;
+}
+
+.categorias ul li:hover {
+    background-color: #ffd333;
+}
+
+
+/*Impresoras 3D*/
+
+#impresoras3D {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.4rem;
+    width: 100%;
+}
+
+#impresoras3D ul {
+    display: flex;
+    list-style-type: none;
+    margin: 1.8rem;
+    justify-content: space-between;
+
+}
+
+#impresoras3D ul li { 
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    align-items: center;
+}
+
+#impresoras3D img {
+    width: 250px;
+    height: 250px;
+}
+    
+
+#impresoras3D ul li h3 { 
+    color: #3d464d;
+}
+
+#impresoras3D ul li h6 { 
+    color: #3d464d;
+    font-size: .9rem;
+}
+
+
+#impresoras3D button { 
+    background-color: #ffd333;
+    border: none;
+    padding: .3rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+
+#impresoras3D h1 {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #3d464d;
+}
+
+#impresoras3D h1::after {
+    content: "";
+    display: inline-block;
+    width: 82%; 
+    margin-left: 10px; 
+    vertical-align: middle;
+   border: 1px dotted #3d464d;
+   }
+
+
+   /*Filamentos*/
+
+   #filamentos3D {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.4rem;
+    width: 100%;
+}
+
+#filamentos3D ul {
+    display: flex;
+    list-style-type: none;
+    margin: 1.8rem;
+    justify-content: space-between;
+
+}
+
+#filamentos3D ul li { 
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    align-items: center;
+}
+
+#filamentos3D img {
+    width: 250px;
+    height: 250px;
+}
+    
+
+#filamentos3D ul li h3 { 
+    color: #3d464d;
+}
+
+#filamentos3D ul li h6 { 
+    color: #3d464d;
+    font-size: .9rem;
+}
+
+
+#filamentos3D button { 
+    background-color: #ffd333;
+    border: none;
+    padding: .3rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+
+#filamentos3D h1 {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #3d464d;
+}
+
+#filamentos3D h1::after {
+    content: "";
+    display: inline-block;
+    width: 82%; 
+    margin-left: 10px; 
+    vertical-align: middle;
+   border: 1px dotted #3d464d;
+   }
+
+
+   /*Accesorios y repuestos*/
+
+   #accesoriosYRepuestos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.4rem;
+    width: 100%;
+}
+
+#accesoriosYRepuestos ul {
+    display: flex;
+    list-style-type: none;
+    margin: 1.8rem;
+    justify-content: space-between;
+
+}
+
+#accesoriosYRepuestos ul li { 
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    align-items: center;
+}
+
+#accesoriosYRepuestos img {
+    width: 250px;
+    height: 250px;
+}
+    
+
+#accesoriosYRepuestos ul li h3 { 
+    color: #3d464d;
+}
+
+#accesoriosYRepuestos ul li h6 { 
+    color: #3d464d;
+    font-size: .9rem;
+}
+
+
+#accesoriosYRepuestos button { 
+    background-color: #ffd333;
+    border: none;
+    padding: .3rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+
+#accesoriosYRepuestos h1 {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #3d464d;
+}
+
+#accesoriosYRepuestos h1::after {
+    content: "";
+    display: inline-block;
+    width: 70%; 
+    margin-left: 10px; 
+    vertical-align: middle;
+   border: 1px dotted #3d464d;
+   }
+
+
+   /*Formulario de registro*/
+
+   #formRegistro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 550px;
+    
+   }
+
+   #formRegistro form {
+    margin-top: 2rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    background-color: #3d464d;
+    border-radius: 1rem;
+   }
+
+   #formRegistro form input {
+    width: 89%;
+    height: 40px;
+    border: none;
+    background-color: #ffd333;
+    border: solid 2px #dadada;
+   }
+
+   #formRegistro h1 {
+    color: #dadada;
+    font-size: 1.5rem;
+    margin-top: .5rem;
+   }
+
+   #formRegistro form input::placeholder {
+font-family: "Pontano Sans" , sans-serif; 
+font-size: 1rem;
+}
+
+#formRegistro h4 {
+    color: #dadada;
+}
+
+#formRegistro a { 
+    color: #ffd333;
+}
+
+#formRegistro button { 
+    background-color: #ffd333;
+    border: none;
+    color: #3d464d;
+    width: 200px;
+    padding: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+
+/*Formulario de inicio de sesión*/
+#formInicioSesion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+}
+
+#formInicioSesion form {
+    margin-top: 2rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    background-color: #3d464d;
+    border-radius: 1rem;
+   }
+
+   #formInicioSesion form input {
+    width: 89%;
+    height: 40px;
+    border: none;
+    background-color: #ffd333;
+    border: solid 2px #dadada;
+   }
+
+   #formInicioSesion h1 {
+    color: #dadada;
+    font-size: 1.5rem;
+    margin-top: .5rem;
+   }
+
+   #formInicioSesion button { 
+    background-color: #ffd333;
+    border: none;
+    color: #3d464d;
+    width: 200px;
+    padding: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 100%;
+    height: 250px;
+    background-color: #3d464d;
+}
+
+.infoEmpresa { 
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    margin-top: .8rem;
+    gap: .5rem;
+    margin-left: 1rem;
+    
+}
+
+.infoEmpresa h2 {
+    color: #ECECEC;
+    text-transform: uppercase;
+}
+
+.infoEmpresa p {
+    color: #ECECEC;
+}
+
+.redes { 
+    display: flex;
+    flex-direction: column;
+   margin-left: 6rem;
+    gap: .5rem;
+    width: 480px;
+    margin-top: .8rem;
+}
+
+.redes h2 { 
+    color: #ECECEC;
+    text-transform: uppercase;
+}
+
+.redes picture {
+    display: flex;
+    gap: .4rem;
+    align-items: center;
+
+}
+
+.redes picture a {
+    color: #ECECEC;
+    text-decoration: none;
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: 80%;
+   margin-top: .8rem;
+    gap: .5rem;
+}
+
+#contacto picture {
+    display: flex;
+    gap: .4rem;
+}
+
+#contacto picture h4 {
+    color: #ECECEC;
+    font-weight: 300;
+    
+}
+
+
+#contacto h2 { 
+    color: #ECECEC;
+    text-transform: uppercase;
+}
+
+
+/*menu hamburguesa*/
+#hamburguesa label {
+    background-color: #ffd333;
+    margin-right: 1rem;
+    padding: .3rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+#hamburguesa input {
+    display: none;
+}
+
+#hamburguesa ul { 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 200px;
+    background-color: #ffd333;
+    width: 150px;
+    height: 400px;
+    right: 40;
+    margin-right: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: none;
+   }
+
+   #menuburguer:checked ~ .hamburguesa {
+    display: flex;
+   }
+
+   .hamburguesa a {
+    color: #3d464d;
+   }
